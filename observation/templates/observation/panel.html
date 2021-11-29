@@ -1,0 +1,11 @@
+{% block header %}
+    {% load static %}
+    <script src="{% static 'local/panel.js' %}"></script>
+{% endblock %}
+
+<div class="ui left fixed vertical menu" style="top: 10vh; height: 90vh">
+    {% include 'observation/panel/time.html' %}
+    {% include 'observation/panel/telescope.html' %}
+    {% include 'observation/panel/camera.html' %}
+    {% include 'observation/panel/dome.html' %}
+</div>

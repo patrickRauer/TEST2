@@ -1,0 +1,13 @@
+
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Catalog
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="{% url 'catalog:index' %}">Overview</a>
+        <a class="dropdown-item" href="{% url 'catalog:add' %}">add source</a>
+        <a class="dropdown-item" href="{% url 'catalog:source_types' %}">source types</a>
+        <a class="dropdown-item" href="{% url 'catalog:source_types_add' %}">add source type</a>
+    </div>
+</li>

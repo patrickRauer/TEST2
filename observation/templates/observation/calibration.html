@@ -1,0 +1,52 @@
+{% extends 'main/basic.html' %}
+
+{% block body %}
+<section>
+    Astrometry/ Pointing offset
+    <form>
+        <table>
+            <tr>
+                <td colspan="2">
+
+                </td>
+                
+            </tr>
+        </table>
+    </form>
+</section>
+
+<section>
+    Photometric
+    <form>
+        <table>
+            <tr>
+                <td colspan="2">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Survey:
+                </td>
+                <td>
+                    <select>
+                        {% for s in surveys %}
+                            <option value="{{s}}">
+                                {{s}}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Transformation equation:
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+        </table>
+    </form>
+</section>
+{% endblock %}

@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+        {% ifequal section 'main' %}
+            <li class="nav-item active">
+        {% else %}
+            <li class="nav-item">
+        {% endifequal %}
+
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      {% include 'observation/nav.html' %}
+      {% include 'camera/nav.html' %}
+        {% include 'archive/nav.html' %}
+        {% include 'filter_wheel/nav.html' %}
+        {% include 'catalog/nav.html' %}
+      <li class="nav-item">
+        <a class="nav-link" href="#">Settings</a>
+      </li>
+      <li class="nav-item">
+      </li>
+    </ul>
+  </div>
+</nav>

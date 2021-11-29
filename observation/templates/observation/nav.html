@@ -1,0 +1,13 @@
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Observation
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="{% url 'observation:index' %}">Overview</a>
+        <a class="dropdown-item" href="{% url 'observation:standard' %}">Standard</a>
+        <a class="dropdown-item" href="{% url 'observation:catalog' %}">Catalog source</a>
+        <a class="dropdown-item" href="{% url 'observation:index' %}">Series</a>
+        <a class="dropdown-item" href="{% url 'observation:index' %}">Multi Filter</a>
+        <a class="dropdown-item" href="{% url 'observation:index' %}">Calibration</a>
+    </div>
+</li>

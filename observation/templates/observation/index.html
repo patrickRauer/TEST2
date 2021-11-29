@@ -1,0 +1,9 @@
+{% extends 'main/basic.html' %}
+
+{% block prebody %}
+        {% include 'observation/panel.html' %}
+{% endblock %}
+{% block container %}
+        {% load render_table from django_tables2 %}
+        {% render_table table %}
+{% endblock %}
